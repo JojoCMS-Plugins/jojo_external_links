@@ -1,0 +1,4 @@
+a[rel~="external"], a[rel="external"], a.external {
+	background: url(../images/icons/external.png) no-repeat 100% 50%;
+	padding-right: 1em;
+}

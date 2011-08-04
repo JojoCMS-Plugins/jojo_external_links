@@ -1,0 +1,1 @@
+Makes external links open in a new window. Also adds an external icon to text links.
