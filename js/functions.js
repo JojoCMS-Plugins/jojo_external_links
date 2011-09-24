@@ -3,7 +3,9 @@ jQuery(document).ready(function() {
 		return false;
 	}
 	if (extlinkopts.newwindow) {
-		$(extlinkopts.newwparent+" a[href*='http://']:not([href*='"+location.hostname+"'])").click( function() {
+		var sel = extlinkopts.newwparent+" a[href*='http://']:not([href*='"+location.hostname+"'])";
+		if (extlinkopts.newwexclude) { sel = sel+":not("+extlinkopts.newwexclude+")" };
+		$(sel).click( function() {
 		  window.open(this.href); return false;
 		});
 	}

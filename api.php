@@ -42,6 +42,16 @@ $_options[] = array(
     'plugin'      => 'jojo_external_links'
 );
 $_options[] = array(
+    'id'          => 'jojo_external_links_newwindowparentexclude',
+    'category'    => 'External Links',
+    'label'       => 'New Window Exclude',
+    'description' => 'Only child items of this CSS selector will NOT be modified. Useful for Lightbox etc.',
+    'type'        => 'text',
+    'default'     => "[rel^='lightbox']",
+    'options'     => '',
+    'plugin'      => 'jojo_external_links'
+);
+$_options[] = array(
     'id'          => 'jojo_external_links_relorclassparent',
     'category'    => 'External Links',
     'label'       => 'Rel or Class CSS Parent',
